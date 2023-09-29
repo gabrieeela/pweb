@@ -1,0 +1,138 @@
+body{
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+#titulo, #contenido .intro, #contenido .pregunta, #niveles, #puntajes{
+    padding-top: 10px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    text-size-adjust: auto;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+    font-style: normal;
+    color: midnightblue;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: midnightblue;
+}
+
+span, a{
+    font-size: large;
+    color: midnightblue;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    color:black
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 700;
+    list-style: none;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+input{
+    font-size: large;
+    border: 0ch;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+#galeria img{
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid white;
+    background-color: white;
+    width: 210px;
+    height: 300px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
+    text-align: end;
+}
+
+label > input[type=radio]{
+    display: inline;
+    vertical-align: sub;
+    width: 19px;
+    height: 18px;
+    border-radius: 70%;
+}
+
+.btn{
+    border: black;
+    border-radius: 12px;
+    border-style: none;
+    background-color:lightskyblue;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover{background: rgb(13, 182, 238);}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 450px;
+    box-shadow: none;
+    border: 0.1em solid black;
+}
+
+table thead tr{
+    background-color: skyblue;
+    color: black;
+    text-align: center;
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+}
+
+table th, table td{
+    padding: 12px 15px;
+    border: 0.1em solid black;
+}
+
+table tbody tr{
+    border-bottom: 0.1em solid black;
+    background-color: whitesmoke;
+}
+
+footer{
+    float: inline-end;
+    padding-top: 40px;
+    font-size: medium;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}

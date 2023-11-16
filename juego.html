@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <title>Quiz: ¿Cuánto sabés sobre historia argentina de acuerdo a sus presidentes?</title>
+        <link rel="stylesheet" href="estilos.css">
+    
+    </head>
+
+    <body>
+        <header id="titulo">
+            <h1>Quiz: ¿Cuánto sabés sobre historia argentina de acuerdo a sus presidentes?</h1>
+        </header>
+        
+        <main id="contenido">
+            <section id="intro">
+                <p>Desde la declaración de la Independencia en 1816, la Argentina pasó por una cantidad de periodos, los cuales estuvieron marcados por diferentes gobiernos (Ya sean democráticos o de facto), teniendo un total de 53 presidentes hasta ahora.</p>
+                <p>Poné a prueba todos tus conocimientos de historia argentina (De acuerdo al presidente que te toque) con este quiz.</p>
+                <p><span> ¡ATENCIÓN! No vas a saber si respondiste todo correctamente o no hasta que termines de jugarlo.</span></p>
+            <form id="nombre">
+                <p>Antes de comenzar a jugar, ingresá tu nombre:</p>
+                <input type="text" id="nom" name="nombre"/>
+            </form>         
+            <button class="btn" onclick="comenzarJuego()"> Comenzar 
+            </button></section>
+
+            <section id="preguntas">
+                <h1> Ahora si, ¡Bienvenido al quiz! </h1>
+                <p> Cada una de éstas preguntas tiene su cierto grado de dificultad.</p> 
+                <p> A qué no te animás a contestarlas todas. </p>
+                <p><span> ¡ATENCIÓN! No se vale empezar por cualquier pregunta. Contestá todo en orden. </span></p>
+
+            <div class="quiz-container" id="quiz">
+                <img  />
+                <p id="pregunta">Pregunta</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="opcion" id="a" class="opcion">
+                        <label for="a" id="a_text">Opcion</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="opcion" id="b" class="opcion">
+                        <label for="b" id="b_text">Opcion</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="opcion" id="c" class="opcion">
+                        <label for="c" id="c_text">Opcion</label>
+                    </li>
+                </ul> 
+                <button id="submit"> Siguiente </button>
+                </div> 
+                
+            </section>
+            <section id="puntajes">
+                <h2> ¡Compará tu puntaje con el de las demás personas que también jugaron! </h2>
+
+                <table class="Tabla de puntajes">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Puntaje</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaPuntajes"></tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            Diseñado por Gabriela Belnava para la clase de Programación Web I del profesor Pablo Pandolfo
+        </footer>
+
+        <script src="codigo.js"></script>
+    </body>
+</html>

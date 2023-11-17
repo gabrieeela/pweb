@@ -19,10 +19,10 @@ const databasePreguntas = [
     },
  
     {
-     pregunta: "\n La etapa del modelo por sustitución de importaciones fue caracterizada por el impulso que se le dió a la industria nacional. Uno de sus presidentes más recordados fue Juan Domingo Perón, el cual tuvo más de un mandato. \n\n ¿Cómo se llamó el plan que él implementó para unificar las medidas que afectaban la exportación e importación?",
-     a: "Plan de cinco años", 
-     b: "Plan Cóndor", 
-     c: "Plan Quinquenal",
+     pregunta: "\n Juan Domingo Perón fue elegido presidente dos veces durante la etapa de la Industralización por Sustitución de Importaciones, siendo su mandato uno de los que más benefició a la clase trabajadora. \n\n ¿Qué importante ministerio creó durante su mandato?",
+     a: "Ministerio de Economía", 
+     b: "Ministerio de Salud", 
+     c: "Ministerio de Educación",
      rta: "c",
      imagen: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Juan_Domingo_Per%C3%B3n.jpg",
     },
@@ -37,7 +37,7 @@ const databasePreguntas = [
     },
  
     {
-     pregunta: "\n Otro presidente característico del neoliberalismo fue Carlos Menem. \n\n ¿En que año impuso al peso como moneda nacional? (Moneda que seguimos teniendo hasta la actualidad)",
+     pregunta: "\n Otro presidente característico del neoliberalismo fue Carlos Menem. \n\n ¿En qué año impuso al Peso como moneda nacional?",
      a: "1995",
      b: "1990",
      c: "1992",

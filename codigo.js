@@ -3,8 +3,8 @@ const databasePreguntas = [
     {
      pregunta: "\n Bernardino Rivadavia fue elegido como nuestro primer presidente luego de la declaración de la Independencia en 1816. \n\n ¿Entre que periodo de tiempo duró su mandato?",
      a: "Entre febrero de 1826 y junio de 1827", 
-     b: "Entre marzo de 1821 y abril de 1824", 
-     c: "Entre julio y agosto de 1827",
+     b: "Entre marzo de 1811 y abril de 1814", 
+     c: "Entre julio de 1815 y agosto de 1820",
      rta: "a",
      imagen: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bernardino_Rivadavia_2.jpg",
     },
@@ -19,7 +19,7 @@ const databasePreguntas = [
     },
  
     {
-     pregunta: "\n Juan Domingo Perón fue elegido presidente dos veces durante la etapa de la Industralización por Sustitución de Importaciones, siendo su mandato uno de los que más benefició a la clase trabajadora. \n\n ¿Qué importante ministerio creó durante su mandato?",
+     pregunta: "\n Juan Domingo Perón fue elegido presidente dos veces durante la etapa de la Industralización por Sustitución de Importaciones, siendo sus mandatos uno de los que más benefició a la clase trabajadora. \n\n ¿Qué importante ministerio creó durante su mandato?",
      a: "Ministerio de Economía", 
      b: "Ministerio de Salud", 
      c: "Ministerio de Educación",
@@ -129,17 +129,25 @@ submitBtn.addEventListener('click', () => {
            quiz.innerHTML = `
            <h2>Contestaste ${puntaje}/${databasePreguntas.length} preguntas correctamente.</h2>
            <button onclick="location.reload()"> Volver a jugar </button> `
+
+           actualizarTablaPuntajes(nombre.value, puntaje);
         } 
 
     }
 })
 
-function tablaDePuntajes() {
-    var fila="<tr><td>"+nombre+"</td><td>"+puntaje+"</td></tr>";
-
-    var btn = document.createElement("TR");
-   	btn.innerHTML=fila;
-    document.getElementById("tablaPuntajes").appendChild(btn);
+function actualizarTablaPuntajes(nombre, puntaje) {
+    const tabla = document.getElementById('puntajes');
+    const fila = document.createElement('tr');
+    const celdaNombre = document.createElement('td');
+    const celdaPuntaje = document.createElement('td');
+  
+    celdaNombre.textContent = nombre;
+    celdaPuntaje.textContent = puntaje;
+  
+    fila.appendChild(celdaNombre);
+    fila.appendChild(celdaPuntaje);
+    tabla.appendChild(fila);
 }
 
 
